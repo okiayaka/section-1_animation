@@ -1,0 +1,85 @@
+.box {
+  width: 100px;
+  height: 100px;
+  background-color: red;
+  /* transition-property: all; */
+  /* 何をアニメーションさせるのか↓ */
+  transition-property: width;
+  
+  /* アニメーション時間↓ */
+  transition-duration: 1s;
+  
+  /* アニメーションの変化の仕方↓ */
+  transition-timing-function: ease;
+  
+  /* アニメーションの遅れ↓ */
+  transition-delay: 0s;
+
+  /* transition: all 1s ease 0s; */
+}
+
+.box:hover {
+  width: 300px;
+  height: 300px;
+}
+
+
+.box1 {
+  width: 100px;
+  height: 100px;
+  background-color: blue;
+  transition: all 1s ease 0s;
+}
+
+.box1:hover {
+  /* transform: translate()は要素を移動する。 */
+  transform: translate(50px);
+  /* Xは横に移動する */
+  transform: translateX(50px);
+  /* Yは縦に移動する */
+  transform: translateY(50px);
+  /* Zは奥に移動する */
+  transform: translateZ(50px);
+}
+
+
+.box2 {
+  width: 100px;
+  height: 100px;
+  background-color: green;
+  transition: all 1s ease 0s;
+}
+
+.box2:hover {
+  /* transform: rotate(角度)は要素を回転させる。 */
+  transform: rotate(180deg);
+  /* rotateXは横軸で回転する */
+  transform: rotateX(180deg);
+  /* rotateYは縦軸で回転する */
+  transform: rotateY(180deg);
+  /* rotateXは手前から奥の軸で回転する */
+  transform: rotateZ(180deg);
+}
+
+
+.box3 {
+  width: 100px;
+  height: 100px;
+  background-color: yellow;
+  transition: all 1s ease 0s;
+}
+
+.box3:hover {
+  /* transform: scale(倍数)は要素を拡大(縮小)する。 */
+  transform: scale(1.5);
+  /* 横に拡大↓ */
+  transform: scaleX(1.5);
+  /* 縦の拡大↓ */
+  transform: scaleY(1.5);
+  /* 奥に拡大↓ */
+  transform: scaleZ(1.5);
+  /* 横・縦・奥すべてに倍率を指定できる */
+  transform: scale3d(1.5);
+}
+
+transform: perspective;
